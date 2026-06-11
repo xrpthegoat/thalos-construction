@@ -3,6 +3,16 @@
 Standalone static site. No build step, no frameworks, no paid services.
 **This project is independent — not part of any other system.**
 
+**Live at:** https://xrpthegoat.github.io/thalos-construction/ (GitHub Pages, free)
+Repo: https://github.com/xrpthegoat/thalos-construction — push to `main` to redeploy.
+
+## Brand
+
+- Navy `#0A1422` background / `#101D31` surfaces / `#1C2E47` hairlines
+- Brushed gold `#C9A24F` (gradient `--gold-grad`) — conversion accents only
+- Primary slogan: **"You imagine it, we build it."** (hero)
+- Secondary slogan: "Your dream, our passion." (owner section)
+
 ## Files
 
 - `index.html` — the whole page
