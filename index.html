@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thalos Construction — General Contractor | Free Quotes</title>
+  <meta name="description" content="Thalos Construction. You imagine it, we build it. New builds, remodels, and additions — one crew, one point of contact, one fixed quote. Get a free written estimate.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thalos Construction — You Imagine It, We Build It">
+  <meta property="og:description" content="New builds, remodels, and additions. One crew, one point of contact, one fixed quote. The quote is free.">
+  <meta property="og:type" content="website">
+  <!-- TODO: add og:image (1200x630 export of the FIG.01 frame style) and og:url once the final domain is confirmed -->
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23C9A24F'/%3E%3Cpath d='M8 9h16v5h-5.5v9h-5v-9H8z' fill='%230A1422'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--
+    LocalBusiness JSON-LD — intentionally shipped COMMENTED OUT so placeholder
+    data never leaks to crawlers. Uncomment and fill once real values are in.
+    TODO: replace every bracketed value with real info from Steven.
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Thalos Construction",
+    "url": "[FINAL DOMAIN]",
+    "telephone": "[PHONE]",
+    "areaServed": "[SERVICE AREA]"
+  }
+  </script>
+  -->
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Thalos Construction — back to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">THALOS</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-cta">
+        <!-- TODO: replace [PHONE] with real value from Steven (also update SITE in js/main.js) -->
+        <a class="header-phone mono" href="tel:" data-bind="phone" data-bind-tel>[PHONE]</a>
+        <a class="btn btn-solid" href="#quote">Free Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ SHEET 00 — HERO ============ -->
+    <section class="hero" aria-label="Intro">
+      <span class="crosshair ch-steel ch-1" aria-hidden="true">+</span>
+      <span class="crosshair ch-steel ch-2" aria-hidden="true">+</span>
+      <span class="crosshair ch-steel ch-3" aria-hidden="true">+</span>
+
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="kicker">
+            <span class="kicker-rule" aria-hidden="true"></span>
+            <!-- TODO: replace [SERVICE AREA] with real value from Steven -->
+            <span class="mono">GENERAL CONTRACTOR — <span data-bind="area">[SERVICE AREA]</span></span>
+          </p>
+          <h1 class="hero-headline">
+            <span class="crosshair ch-amber" aria-hidden="true">+</span>
+            <span class="line">You Imagine It.</span>
+            <span class="line line-outline">We Build It.</span>
+          </h1>
+          <p class="hero-sub">New builds, remodels, and additions. One crew, one point of contact, one fixed quote.</p>
+          <div class="cta-pair">
+            <a class="btn btn-solid btn-lg" href="#quote">Get a Free Quote</a>
+            <!-- TODO: replace [PHONE] -->
+            <a class="btn btn-ghost btn-lg" href="tel:" data-bind-tel>Call <span class="mono" data-bind="phone">[PHONE]</span></a>
+          </div>
+        </div>
+
+        <!--
+          THE .fig COMPONENT — the placeholder system used on every image slot.
+          PHOTO SWAP PATH: drop an <img src="images/your-photo.jpg" alt="..."> as the
+          FIRST child of any .fig and add class "has-photo" to the .fig element.
+          The label collapses to a single bottom-left caption bar automatically.
+          The annotation chrome (hazard tab, dimension ticks) stays — it is the
+          portfolio's signature style, not scaffolding.
+        -->
+        <figure class="fig fig-hero" style="--ratio: 4 / 5;">
+          <span class="fig-tab" aria-hidden="true"></span>
+          <figcaption class="fig-label">
+            <span class="fig-no mono">FIG. 01</span>
+            <span class="fig-name mono">FLAGSHIP PROJECT — EXTERIOR</span>
+            <span class="fig-status mono">PHOTO PENDING</span>
+          </figcaption>
+          <span class="fig-dim mono" aria-hidden="true">2400 × 1600</span>
+        </figure>
+      </div>
+
+      <!-- Capability ticker — pure CSS marquee, pauses on hover & reduced motion -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span><span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHEET 01 — TITLE BLOCK (credibility strip) ============ -->
+    <section class="titleblock" aria-label="Credentials">
+      <ul class="titleblock-list mono">
+        <!-- TODO: replace [LICENSE #] with real value from Steven -->
+        <li>LICENSED &amp; INSURED — <span data-bind="license">[LICENSE #]</span></li>
+        <li>RESIDENTIAL + LIGHT COMMERCIAL</li>
+        <li>FREE WRITTEN ESTIMATES</li>
+        <!-- TODO: replace [SERVICE AREA] -->
+        <li>SERVING <span data-bind="area">[SERVICE AREA]</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ SHEET 02 — WHAT WE BUILD ============ -->
+    <section class="sheet section-services" id="services">
+      <div class="sheet-rule">
+        <span class="sheet-label mono">SHEET 02 — WHAT WE BUILD</span>
+        <span class="sheet-ticks" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="container">
+        <div class="sheet-head">
+          <span class="ghost" aria-hidden="true">02</span>
+          <h2>What We Build</h2>
+          <p class="sheet-intro">One crew for the whole job.</p>
+        </div>
+
+        <!--
+          STATIC FALLBACK: these cards are re-rendered by js/main.js from the
+          SERVICES array (single source of truth — edit services THERE).
+          Without JS, this hardcoded list stands as-is.
+        -->
+        <div class="services-grid" id="services-grid">
+          <article class="service-card">
+            <span class="card-no" aria-hidden="true">01</span>
+            <h3>New Construction</h3>
+            <p>Ground-up builds, slab to ridgeline.</p>
+            <a class="card-link" href="#quote" data-service="new-construction">Get a quote for this <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <span class="card-no" aria-hidden="true">02</span>
+            <h3>Remodeling &amp; Renovation</h3>
+            <p>Kitchens, baths, whole homes. Done right once.</p>
+            <a class="card-link" href="#quote" data-service="remodeling">Get a quote for this <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <span class="card-no" aria-hidden="true">03</span>
+            <h3>Additions</h3>
+            <p>More room without moving.</p>
+            <a class="card-link" href="#quote" data-service="additions">Get a quote for this <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <span class="card-no" aria-hidden="true">04</span>
+            <h3>Kitchens &amp; Baths</h3>
+            <p>The two rooms that sell a house.</p>
+            <a class="card-link" href="#quote" data-service="kitchens-baths">Get a quote for this <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <span class="card-no" aria-hidden="true">05</span>
+            <h3>Light Commercial</h3>
+            <p>Storefronts, offices, fit-outs.</p>
+            <a class="card-link" href="#quote" data-service="light-commercial">Get a quote for this <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <span class="card-no" aria-hidden="true">06</span>
+            <h3>Decks &amp; Exteriors</h3>
+            <p>Decks, siding, the parts weather tests first.</p>
+            <a class="card-link" href="#quote" data-service="decks-exteriors">Get a quote for this <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <p class="section-close">Not sure where your project fits? Ask. <a class="text-link" href="#quote">The quote is free →</a></p>
+      </div>
+    </section>
+
+    <!-- ============ SHEET 03 — FROM QUOTE TO KEYS ============ -->
+    <section class="sheet section-process" id="process">
+      <div class="sheet-rule">
+        <span class="sheet-label mono">SHEET 03 — FROM QUOTE TO KEYS</span>
+        <span class="sheet-ticks" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="container">
+        <div class="sheet-head">
+          <span class="ghost" aria-hidden="true">03</span>
+          <h2>From Quote to Keys</h2>
+        </div>
+
+        <ol class="process">
+          <li class="step">
+            <span class="step-no">01</span>
+            <h3>Site Visit</h3>
+            <p>We walk it with you. Free.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">02</span>
+            <h3>Fixed Quote</h3>
+            <p>Numbers in writing. No surprises.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">03</span>
+            <h3>The Build</h3>
+            <p>One crew. One point of contact.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">04</span>
+            <h3>Walkthrough</h3>
+            <p>You sign off when it&rsquo;s right — before final payment.</p>
+          </li>
+        </ol>
+
+        <p class="section-close">Step 01 costs you nothing. <a class="text-link" href="#quote">Get a free quote →</a></p>
+      </div>
+    </section>
+
+    <!-- ============ SHEET 04 — THE WORK ============ -->
+    <section class="sheet section-work" id="work">
+      <div class="sheet-rule">
+        <span class="sheet-label mono">SHEET 04 — THE WORK</span>
+        <span class="sheet-ticks" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="container">
+        <div class="sheet-head">
+          <span class="ghost" aria-hidden="true">04</span>
+          <h2>The Work</h2>
+        </div>
+
+        <div class="work-grid">
+          <figure class="fig work-feature" style="--ratio: 4 / 3;">
+            <span class="fig-tab" aria-hidden="true"></span>
+            <figcaption class="fig-label">
+              <span class="fig-no mono">FIG. 03</span>
+              <span class="fig-name mono">EXTERIOR — FINISHED FACADE</span>
+              <span class="fig-status mono">PHOTO PENDING</span>
+            </figcaption>
+            <span class="fig-dim mono" aria-hidden="true">2400 × 1800</span>
+          </figure>
+
+          <figure class="fig" style="--ratio: 1 / 1;">
+            <span class="fig-tab" aria-hidden="true"></span>
+            <figcaption class="fig-label">
+              <span class="fig-no mono">FIG. 04</span>
+              <span class="fig-name mono">KITCHEN REMODEL — AFTER</span>
+              <span class="fig-status mono">PHOTO PENDING</span>
+            </figcaption>
+            <span class="fig-dim mono" aria-hidden="true">1600 × 1600</span>
+          </figure>
+
+          <!-- Before/after pair clipped together as ONE unit with a shared bracket.
+               Pre-wired for a future before/after slider: replace .ba-pair's two
+               .fig children with a slider component, keep the bracket caption. -->
+          <div class="ba-pair" role="group" aria-label="Bath remodel, before and after">
+            <figure class="fig" style="--ratio: 1 / 1;">
+              <figcaption class="fig-label">
+                <span class="fig-no mono">FIG. 05a</span>
+                <span class="fig-name mono">BATH — BEFORE</span>
+                <span class="fig-status mono">PHOTO PENDING</span>
+              </figcaption>
+            </figure>
+            <figure class="fig" style="--ratio: 1 / 1;">
+              <span class="fig-tab" aria-hidden="true"></span>
+              <figcaption class="fig-label">
+                <span class="fig-no mono">FIG. 05b</span>
+                <span class="fig-name mono">BATH — AFTER</span>
+                <span class="fig-status mono">PHOTO PENDING</span>
+              </figcaption>
+            </figure>
+            <span class="ba-bracket mono" aria-hidden="true">FIG. 05 — BATH REMODEL, BEFORE / AFTER</span>
+          </div>
+
+          <figure class="fig" style="--ratio: 3 / 4;">
+            <span class="fig-tab" aria-hidden="true"></span>
+            <figcaption class="fig-label">
+              <span class="fig-no mono">FIG. 06</span>
+              <span class="fig-name mono">DECK &amp; ADDITION</span>
+              <span class="fig-status mono">PHOTO PENDING</span>
+            </figcaption>
+            <span class="fig-dim mono" aria-hidden="true">1800 × 2400</span>
+          </figure>
+
+          <figure class="fig" style="--ratio: 1 / 1;">
+            <span class="fig-tab" aria-hidden="true"></span>
+            <figcaption class="fig-label">
+              <span class="fig-no mono">FIG. 07</span>
+              <span class="fig-name mono">FRAMING DAY</span>
+              <span class="fig-status mono">PHOTO PENDING</span>
+            </figcaption>
+            <span class="fig-dim mono" aria-hidden="true">1600 × 1600</span>
+          </figure>
+        </div>
+
+        <!-- TODO: replace [PHONE] -->
+        <p class="work-note mono">Photography of completed projects is being prepared.<br>
+          Ask us to walk you through recent work — <a class="text-link" href="tel:" data-bind-tel><span data-bind="phone">[PHONE]</span></a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ SHEET 05 — WHY THALOS (stat band) ============ -->
+    <section class="statband" aria-label="Why Thalos">
+      <div class="container statband-grid">
+        <div class="stat">
+          <span class="stat-num">$0</span>
+          <span class="stat-label">Every quote is free</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Point of contact on every job</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Owner-involved builds</span>
+        </div>
+        <!-- Fourth stat ships commented out — uncomment when Steven confirms the real number:
+        <div class="stat">
+          <span class="stat-num">[XX]+</span>
+          <span class="stat-label">Years in the trade</span>
+        </div>
+        -->
+      </div>
+      <!-- TODO: replace [LICENSE #] with real value from Steven -->
+      <p class="statband-license mono">Licensed &amp; insured — <span data-bind="license">[LICENSE #]</span></p>
+    </section>
+
+    <!-- ============ SHEET 06 — THE NAME ON EVERY JOB ============ -->
+    <section class="sheet section-about" id="about">
+      <div class="sheet-rule">
+        <span class="sheet-label mono">SHEET 06 — THE NAME ON EVERY JOB</span>
+        <span class="sheet-ticks" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="container about-grid">
+        <figure class="fig" style="--ratio: 3 / 4;">
+          <span class="fig-tab" aria-hidden="true"></span>
+          <figcaption class="fig-label">
+            <span class="fig-no mono">FIG. 08</span>
+            <span class="fig-name mono">STEVEN LOPEZ — OWNER, ON SITE</span>
+            <span class="fig-status mono">PHOTO PENDING</span>
+          </figcaption>
+          <span class="fig-dim mono" aria-hidden="true">1800 × 2400</span>
+        </figure>
+
+        <div class="about-copy">
+          <div class="sheet-head">
+            <span class="ghost" aria-hidden="true">06</span>
+            <h2>The Name on Every Job</h2>
+          </div>
+          <blockquote class="owner-note">
+            <p>&ldquo;I&rsquo;m Steven Lopez. Thalos is my name on the line, so here&rsquo;s the deal: you get a written quote before we start, one crew with one point of contact, and a final walkthrough where you tell me we&rsquo;re done — not the other way around.&rdquo;</p>
+          </blockquote>
+          <p class="owner-sig mono">Steven Lopez — Owner</p>
+          <p class="owner-pull">When you call Thalos, you get Steven.
+            <!-- TODO: replace [PHONE] -->
+            <a class="text-link mono" href="tel:" data-bind-tel>CALL <span data-bind="phone">[PHONE]</span></a>
+          </p>
+          <!-- Client-requested secondary slogan -->
+          <p class="owner-tagline mono">— YOUR DREAM, OUR PASSION —</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHEET 07 — WHERE WE WORK + STRAIGHT ANSWERS ============ -->
+    <section class="sheet section-faq" id="faq">
+      <div class="sheet-rule">
+        <span class="sheet-label mono">SHEET 07 — WHERE WE WORK + STRAIGHT ANSWERS</span>
+        <span class="sheet-ticks" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="container faq-grid">
+
+        <div class="area-card">
+          <svg class="area-map" viewBox="0 0 280 240" role="img" aria-label="Service area radius map">
+            <circle cx="140" cy="120" r="40"  fill="none" stroke="#4A6FA5" stroke-opacity="0.4" stroke-dasharray="6 6"/>
+            <circle cx="140" cy="120" r="75"  fill="none" stroke="#4A6FA5" stroke-opacity="0.4" stroke-dasharray="6 6"/>
+            <circle cx="140" cy="120" r="110" fill="none" stroke="#4A6FA5" stroke-opacity="0.4" stroke-dasharray="6 6"/>
+            <path d="M140 96 c-11 0 -20 9 -20 20 c0 15 20 32 20 32 s20 -17 20 -32 c0 -11 -9 -20 -20 -20 z" fill="#C9A24F"/>
+            <circle cx="140" cy="115" r="7" fill="#0A1422"/>
+          </svg>
+          <!-- TODO: replace [SERVICE AREA] -->
+          <h3 class="area-head"><span data-bind="area">[SERVICE AREA]</span> and Surrounding Towns</h3>
+          <p>Not sure if we cover you? Call — if we can&rsquo;t take the job, we&rsquo;ll say so.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="sheet-head">
+            <span class="ghost" aria-hidden="true">07</span>
+            <h2>Straight Answers</h2>
+          </div>
+
+          <details>
+            <summary>Is the quote really free?<span class="faq-plus" aria-hidden="true">+</span></summary>
+            <p>Yes. Site visit, written numbers, no obligation. <a class="text-link" href="#quote">Ask us directly →</a></p>
+          </details>
+          <details>
+            <summary>Are you licensed and insured?<span class="faq-plus" aria-hidden="true">+</span></summary>
+            <!-- TODO: confirm license/insurance details with Steven -->
+            <p><span class="pending mono">[ANSWER PENDING — CONFIRM LICENSE/INSURANCE DETAILS WITH STEVEN]</span> <a class="text-link" href="#quote">Ask us directly →</a></p>
+          </details>
+          <details>
+            <summary>Do you handle permits?<span class="faq-plus" aria-hidden="true">+</span></summary>
+            <!-- TODO: confirm with Steven -->
+            <p><span class="pending mono">[ANSWER PENDING — CONFIRM WITH STEVEN]</span> <a class="text-link" href="#quote">Ask us directly →</a></p>
+          </details>
+          <details>
+            <summary>How do payments work?<span class="faq-plus" aria-hidden="true">+</span></summary>
+            <!-- TODO: confirm payment schedule with Steven -->
+            <p><span class="pending mono">[ANSWER PENDING — CONFIRM SCHEDULE WITH STEVEN]</span> <a class="text-link" href="#quote">Ask us directly →</a></p>
+          </details>
+          <details>
+            <summary>How soon can you start?<span class="faq-plus" aria-hidden="true">+</span></summary>
+            <!-- TODO: confirm lead times with Steven -->
+            <p><span class="pending mono">[ANSWER PENDING — CONFIRM LEAD TIMES WITH STEVEN]</span> <a class="text-link" href="#quote">Ask us directly →</a></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHEET 08 — GET YOUR FREE QUOTE (inverted) ============ -->
+    <section class="quote" id="quote">
+      <div class="hazard hazard-top" aria-hidden="true"></div>
+      <div class="container quote-grid">
+
+        <div class="quote-pitch">
+          <h2 class="quote-headline"><span>The Quote Is Free.</span><span>The Work Is Permanent.</span></h2>
+          <!-- TODO: replace [PHONE] and [SERVICE AREA] -->
+          <a class="quote-phone mono" href="tel:" data-bind-tel><span data-bind="phone">[PHONE]</span></a>
+          <p class="quote-area mono">SERVING <span data-bind="area">[SERVICE AREA]</span></p>
+        </div>
+
+        <div class="form-card" id="form-card">
+          <!--
+            FORM WIRING — Web3Forms (free, no account for the lead, key takes 2 min):
+            1. Go to https://web3forms.com, enter Steven's email, copy the access key.
+            2. Paste it into the value below. Done — submissions land in his inbox.
+            Works with ZERO JS (Web3Forms hosted thank-you redirect).
+            Alternative: FormSubmit.co — change action to
+            https://formsubmit.co/[EMAIL] and remove the access_key input.
+            Last resort: replace <form> with a mailto:[EMAIL] link.
+          -->
+          <form id="quote-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- TODO: paste real Web3Forms access key -->
+            <input type="hidden" name="access_key" value="[WEB3FORMS_KEY — free at web3forms.com, takes 2 min]">
+            <input type="hidden" name="subject" value="New quote request — Thalos Construction website">
+            <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field">
+              <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-phone" name="phone" type="tel" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="f-service">Project type</label>
+              <select id="f-service" name="project_type">
+                <option value="">Select one…</option>
+                <option value="new-construction">New Construction</option>
+                <option value="remodeling">Remodeling &amp; Renovation</option>
+                <option value="additions">Additions</option>
+                <option value="kitchens-baths">Kitchens &amp; Baths</option>
+                <option value="light-commercial">Light Commercial</option>
+                <option value="decks-exteriors">Decks &amp; Exteriors</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="4"></textarea>
+            </div>
+
+            <button class="btn btn-solid btn-lg btn-block" type="submit">Request My Free Quote</button>
+            <p class="form-reassure">No spam, no obligation. A real person reads this.<br>We reply within one business day.</p>
+          </form>
+        </div>
+      </div>
+      <div class="hazard hazard-bottom" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <span class="crosshair ch-steel ch-f" aria-hidden="true">+</span>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Thalos Construction — back to top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">THALOS</span>
+        </a>
+        <p>You imagine it, we build it.<br>New builds, remodels, additions.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <h3 class="footer-head mono">SITE</h3>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote">Free Quote</a>
+      </nav>
+      <div class="footer-contact">
+        <h3 class="footer-head mono">CONTACT</h3>
+        <!-- TODO: replace [PHONE], [EMAIL], [SERVICE AREA], [LICENSE #] -->
+        <a class="mono" href="tel:" data-bind-tel><span data-bind="phone">[PHONE]</span></a>
+        <a class="mono" href="mailto:" data-bind-mail><span data-bind="email">[EMAIL]</span></a>
+        <p class="mono"><span data-bind="area">[SERVICE AREA]</span></p>
+        <p class="mono">LICENSED &amp; INSURED — <span data-bind="license">[LICENSE #]</span></p>
+        <!-- No social icons until real profiles exist (hard rule). -->
+      </div>
+    </div>
+    <a class="footer-bar" href="tel:" data-bind-tel>FREE QUOTES — CALL <span class="mono" data-bind="phone">[PHONE]</span></a>
+    <p class="footer-fine mono">© 2026 Thalos Construction</p>
+  </footer>
+
+  <!-- Mobile sticky conversion bar -->
+  <div class="sticky-bar" id="sticky-bar">
+    <a class="btn btn-solid" href="#quote">Free Quote</a>
+    <!-- TODO: replace [PHONE] -->
+    <a class="btn btn-ghost" href="tel:" data-bind-tel>Call</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
