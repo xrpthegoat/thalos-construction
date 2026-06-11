@@ -3,7 +3,7 @@
 
 /* ===== EDIT CONTACT INFO HERE — one place, the whole site follows ===== */
 const SITE = {
-  phone: '[PHONE]',        // e.g. '(203) 555-0123'  TODO: real value from Steven
+  phone: '+1 (203) 564-7931',
   email: '[EMAIL]',        // e.g. 'steven@thalosconstruction.com'  TODO
   area: '[SERVICE AREA]',  // e.g. 'Stamford, CT'  TODO
   license: '[LICENSE #]',  // TODO: confirm with Steven
