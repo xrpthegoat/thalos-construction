@@ -16,7 +16,7 @@ const SERVICES = [
   { id: 'additions',        title: 'Additions', blurb: 'More room without moving.' },
   { id: 'kitchens-baths',   title: 'Kitchens & Baths', blurb: 'The two rooms that sell a house.' },
   { id: 'light-commercial', title: 'Light Commercial', blurb: 'Storefronts, offices, fit-outs.' },
-  { id: 'decks-exteriors',  title: 'Decks & Exteriors', blurb: 'Decks, siding, the parts weather tests first.' },
+  // { id: 'service-tbd',   title: '[SERVICE TBD]', blurb: 'Confirm final list with Steven.' },
 ];
 
 /* ----- 1. Inject SITE values into all [data-bind] spans + tel/mailto hrefs ----- */
@@ -50,6 +50,10 @@ if (select) {
     SERVICES.map((s) => `<option value="${s.id}">${s.title}</option>`).join('') +
     '<option value="other">Something else</option>';
 }
+const footerServices = document.getElementById('footer-services');
+if (footerServices) {
+  footerServices.innerHTML = SERVICES.map((s) => `<a href="#services">${s.title}</a>`).join('');
+}
 
 /* ----- 3. Header compresses after 600px of scroll ----- */
 const header = document.querySelector('.site-header');
@@ -79,9 +83,20 @@ if (param && select) select.value = param;
 const form = document.getElementById('quote-form');
 if (form) {
   form.addEventListener('submit', async (e) => {
-    const key = form.querySelector('[name="access_key"]');
-    if (key && isPlaceholder(key.value)) return; // key not set up yet — let the browser handle it
     e.preventDefault();
+    const key = form.querySelector('[name="access_key"]');
+    if (key && isPlaceholder(key.value)) {
+      // Key not configured yet — never fire a known-bad submit that loses the lead
+      let note = form.querySelector('.form-notice');
+      if (!note) {
+        note = document.createElement('p');
+        note.className = 'form-reassure form-notice';
+        note.setAttribute('role', 'alert');
+        form.appendChild(note);
+      }
+      note.textContent = 'The form is being set up — please call us or check back shortly.';
+      return;
+    }
     const btn = form.querySelector('button[type="submit"]');
     btn.disabled = true;
     btn.textContent = 'Sending…';
@@ -92,8 +107,10 @@ if (form) {
         headers: { Accept: 'application/json' },
       });
       if (!res.ok) throw new Error('send failed');
-      document.getElementById('form-card').innerHTML =
-        '<div class="form-success"><h3>GOT IT.</h3><p>Steven will call you.</p></div>';
+      const card = document.getElementById('form-card');
+      card.innerHTML =
+        '<div class="form-success" role="status" tabindex="-1"><h3>GOT IT.</h3><p>Steven will call you.</p></div>';
+      card.firstElementChild.focus();
     } catch {
       btn.disabled = false;
       btn.textContent = 'Request My Free Quote';

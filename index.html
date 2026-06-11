@@ -57,7 +57,7 @@
       </nav>
       <div class="header-cta">
         <!-- TODO: replace [PHONE] with real value from Steven (also update SITE in js/main.js) -->
-        <a class="header-phone mono" href="tel:" data-bind="phone" data-bind-tel>[PHONE]</a>
+        <a class="header-phone mono" href="#quote" data-bind="phone" data-bind-tel>[PHONE]</a>
         <a class="btn btn-solid" href="#quote">Free Quote</a>
       </div>
     </div>
@@ -87,7 +87,7 @@
           <div class="cta-pair">
             <a class="btn btn-solid btn-lg" href="#quote">Get a Free Quote</a>
             <!-- TODO: replace [PHONE] -->
-            <a class="btn btn-ghost btn-lg" href="tel:" data-bind-tel>Call <span class="mono" data-bind="phone">[PHONE]</span></a>
+            <a class="btn btn-ghost btn-lg" href="#quote" data-bind-tel>Call <span class="mono" data-bind="phone">[PHONE]</span></a>
           </div>
         </div>
 
@@ -106,14 +106,14 @@
             <span class="fig-name mono">FLAGSHIP PROJECT — EXTERIOR</span>
             <span class="fig-status mono">PHOTO PENDING</span>
           </figcaption>
-          <span class="fig-dim mono" aria-hidden="true">2400 × 1600</span>
+          <span class="fig-dim mono" aria-hidden="true">1920 × 2400</span>
         </figure>
       </div>
 
       <!-- Capability ticker — pure CSS marquee, pauses on hover & reduced motion -->
       <div class="ticker" aria-hidden="true">
         <div class="ticker-track">
-          <span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span><span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span>
+          <span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span><span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span><span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span><span class="ticker-run">New Construction <i>◆</i> Remodeling <i>◆</i> Additions <i>◆</i> Kitchens &amp; Baths <i>◆</i> Light Commercial <i>◆</i> </span>
         </div>
       </div>
     </section>
@@ -179,12 +179,7 @@
             <p>Storefronts, offices, fit-outs.</p>
             <a class="card-link" href="#quote" data-service="light-commercial">Get a quote for this <span aria-hidden="true">→</span></a>
           </article>
-          <article class="service-card">
-            <span class="card-no" aria-hidden="true">06</span>
-            <h3>Decks &amp; Exteriors</h3>
-            <p>Decks, siding, the parts weather tests first.</p>
-            <a class="card-link" href="#quote" data-service="decks-exteriors">Get a quote for this <span aria-hidden="true">→</span></a>
-          </article>
+          <!-- Final service list TBD with Steven — add confirmed services in js/main.js SERVICES -->
         </div>
 
         <p class="section-close">Not sure where your project fits? Ask. <a class="text-link" href="#quote">The quote is free →</a></p>
@@ -308,7 +303,7 @@
 
         <!-- TODO: replace [PHONE] -->
         <p class="work-note mono">Photography of completed projects is being prepared.<br>
-          Ask us to walk you through recent work — <a class="text-link" href="tel:" data-bind-tel><span data-bind="phone">[PHONE]</span></a>.</p>
+          Ask us to walk you through recent work — <a class="text-link" href="#quote" data-bind-tel><span data-bind="phone">[PHONE]</span></a>.</p>
       </div>
     </section>
 
@@ -366,7 +361,7 @@
           <p class="owner-sig mono">Steven Lopez — Owner</p>
           <p class="owner-pull">When you call Thalos, you get Steven.
             <!-- TODO: replace [PHONE] -->
-            <a class="text-link mono" href="tel:" data-bind-tel>CALL <span data-bind="phone">[PHONE]</span></a>
+            <a class="text-link mono" href="#quote" data-bind-tel>CALL <span data-bind="phone">[PHONE]</span></a>
           </p>
           <!-- Client-requested secondary slogan -->
           <p class="owner-tagline mono">— YOUR DREAM, OUR PASSION —</p>
@@ -380,10 +375,16 @@
         <span class="sheet-label mono">SHEET 07 — WHERE WE WORK + STRAIGHT ANSWERS</span>
         <span class="sheet-ticks" aria-hidden="true"><i></i><i></i><i></i></span>
       </div>
+      <div class="container">
+        <div class="sheet-head">
+          <span class="ghost" aria-hidden="true">07</span>
+          <h2>Straight Answers</h2>
+        </div>
+      </div>
       <div class="container faq-grid">
 
         <div class="area-card">
-          <svg class="area-map" viewBox="0 0 280 240" role="img" aria-label="Service area radius map">
+          <svg class="area-map" viewBox="0 0 280 240" aria-hidden="true">
             <circle cx="140" cy="120" r="40"  fill="none" stroke="#4A6FA5" stroke-opacity="0.4" stroke-dasharray="6 6"/>
             <circle cx="140" cy="120" r="75"  fill="none" stroke="#4A6FA5" stroke-opacity="0.4" stroke-dasharray="6 6"/>
             <circle cx="140" cy="120" r="110" fill="none" stroke="#4A6FA5" stroke-opacity="0.4" stroke-dasharray="6 6"/>
@@ -396,11 +397,6 @@
         </div>
 
         <div class="faq-list">
-          <div class="sheet-head">
-            <span class="ghost" aria-hidden="true">07</span>
-            <h2>Straight Answers</h2>
-          </div>
-
           <details>
             <summary>Is the quote really free?<span class="faq-plus" aria-hidden="true">+</span></summary>
             <p>Yes. Site visit, written numbers, no obligation. <a class="text-link" href="#quote">Ask us directly →</a></p>
@@ -437,11 +433,11 @@
         <div class="quote-pitch">
           <h2 class="quote-headline"><span>The Quote Is Free.</span><span>The Work Is Permanent.</span></h2>
           <!-- TODO: replace [PHONE] and [SERVICE AREA] -->
-          <a class="quote-phone mono" href="tel:" data-bind-tel><span data-bind="phone">[PHONE]</span></a>
+          <a class="quote-phone mono" href="#quote" data-bind-tel><span data-bind="phone">[PHONE]</span></a>
           <p class="quote-area mono">SERVING <span data-bind="area">[SERVICE AREA]</span></p>
         </div>
 
-        <div class="form-card" id="form-card">
+        <div class="form-card" id="form-card" aria-live="polite">
           <!--
             FORM WIRING — Web3Forms (free, no account for the lead, key takes 2 min):
             1. Go to https://web3forms.com, enter Steven's email, copy the access key.
@@ -456,6 +452,8 @@
             <input type="hidden" name="access_key" value="[WEB3FORMS_KEY — free at web3forms.com, takes 2 min]">
             <input type="hidden" name="subject" value="New quote request — Thalos Construction website">
             <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <!-- TODO once domain is final: uncomment so no-JS visitors land on a real thank-you page
+            <input type="hidden" name="redirect" value="https://[FINAL DOMAIN]/thanks.html"> -->
 
             <div class="field">
               <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
@@ -478,7 +476,6 @@
                 <option value="additions">Additions</option>
                 <option value="kitchens-baths">Kitchens &amp; Baths</option>
                 <option value="light-commercial">Light Commercial</option>
-                <option value="decks-exteriors">Decks &amp; Exteriors</option>
                 <option value="other">Something else</option>
               </select>
             </div>
@@ -508,6 +505,16 @@
         </a>
         <p>You imagine it, we build it.<br>New builds, remodels, additions.</p>
       </div>
+      <nav class="footer-nav" aria-label="Services">
+        <h3 class="footer-head mono">WHAT WE BUILD</h3>
+        <div id="footer-services">
+          <a href="#services">New Construction</a>
+          <a href="#services">Remodeling &amp; Renovation</a>
+          <a href="#services">Additions</a>
+          <a href="#services">Kitchens &amp; Baths</a>
+          <a href="#services">Light Commercial</a>
+        </div>
+      </nav>
       <nav class="footer-nav" aria-label="Footer">
         <h3 class="footer-head mono">SITE</h3>
         <a href="#services">Services</a>
@@ -520,23 +527,23 @@
       <div class="footer-contact">
         <h3 class="footer-head mono">CONTACT</h3>
         <!-- TODO: replace [PHONE], [EMAIL], [SERVICE AREA], [LICENSE #] -->
-        <a class="mono" href="tel:" data-bind-tel><span data-bind="phone">[PHONE]</span></a>
-        <a class="mono" href="mailto:" data-bind-mail><span data-bind="email">[EMAIL]</span></a>
+        <a class="mono" href="#quote" data-bind-tel><span data-bind="phone">[PHONE]</span></a>
+        <a class="mono" href="#quote" data-bind-mail><span data-bind="email">[EMAIL]</span></a>
         <p class="mono"><span data-bind="area">[SERVICE AREA]</span></p>
         <p class="mono">LICENSED &amp; INSURED — <span data-bind="license">[LICENSE #]</span></p>
         <!-- No social icons until real profiles exist (hard rule). -->
       </div>
     </div>
-    <a class="footer-bar" href="tel:" data-bind-tel>FREE QUOTES — CALL <span class="mono" data-bind="phone">[PHONE]</span></a>
+    <a class="footer-bar" href="#quote" data-bind-tel>FREE QUOTES — CALL <span class="mono" data-bind="phone">[PHONE]</span></a>
     <p class="footer-fine mono">© 2026 Thalos Construction</p>
   </footer>
 
   <!-- Mobile sticky conversion bar -->
-  <div class="sticky-bar" id="sticky-bar">
+  <nav class="sticky-bar" id="sticky-bar" aria-label="Quick actions">
     <a class="btn btn-solid" href="#quote">Free Quote</a>
     <!-- TODO: replace [PHONE] -->
-    <a class="btn btn-ghost" href="tel:" data-bind-tel>Call</a>
-  </div>
+    <a class="btn btn-ghost" href="#quote" data-bind-tel>Call</a>
+  </nav>
 
   <script src="js/main.js"></script>
 </body>
